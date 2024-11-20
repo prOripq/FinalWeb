@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Library</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="games.css">
+  <link rel="icon" href="favicon.webp">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="Wrong page.html">Gaming</a>
+      <div class="navbar-links" id="navbarLinks">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games Library</a>
+        <a href="Quiz.html">Quiz</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Games Library Section -->
+  <section class="games-library">
+    <h1>Games Library</h1>
+    <div class="games-grid">
+      <div class="game-card" onclick="showGameDetails('lol')">
+        <img src="LogoLOL.png" alt="League of Legends">
+        <h3>League of Legends</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('mk')">
+        <img src="MK.png" alt="Mortal Kombat 1">
+        <h3>Mortal Kombat 1</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('csgo')">
+        <img src="CSGO.png" alt="CS:GO">
+        <h3>Counter-Strike: Global Offensive</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('AS')">
+        <img src="AS.png" alt="Assassins's Creed: Unity">
+        <h3>Assassins's Creed: Unity</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('COD')">
+        <img src="COD.png" alt="Call of Duty: Modern Warfare 2">
+        <h3>Call of Duty: Modern Warfare 2</h3>
+      </div>
+      <div class="game-card1" onclick="showGameDetails('Buck')">
+        <h3>Buckshot Roulette</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('GM')">
+        <img src="Garry's.png" alt="Garry's Mod">
+        <h3>Garry's Mod</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('Hades')">
+        <img src="Hades.png" alt="Hades II">
+        <h3>Hades II</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('Inj')">
+        <img src="Inj.png" alt="Injustice 2">
+        <h3>Injustice 2</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('Ins')">
+        <img src="Ins.avif" alt="Inscryption">
+        <h3>Inscryption</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('L4D2')">
+        <img src="L4D2.png" alt="Left 4 Dead 2">
+        <h3>Left 4 Dead 2</h3>
+      </div>
+      <div class="game-card" onclick="showGameDetails('Over')">
+        <img src="Over.png" alt="Overwatch 2">
+        <h3>Overwatch 2</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="gameDetails"></div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <p>© 2024 Gaming Hobby | Yussupov Zhangir.</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="games.js"></script>
+</body>
+</html>

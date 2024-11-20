@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Hobby - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.webp">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="Easter egg.html">Gaming 🎮</a>
+    <div class="navbar-links" id="navbarLinks">
+      <a href="index.html">Home</a>
+      <a href="games.html">Games Library</a>
+      <a href="Quiz.html">Quiz</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div>
+    <h1 id="Step" style="text-decoration-line: underline;">Step into the World of Gaming</h1>
+    <marquee>Explore, download, and watch the best games</marquee>
+    <a href="games.html" class="btn btn-primary">Explore Games</a>
+  </div>
+</section>
+
+<!-- Trending Games Carousel -->
+<div class="container my-5">
+  <h2>Trending Games</h2>
+  <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="LogoLOL.png" class="img1" alt="Game 1">
+        <div class="carousel-caption">
+          <h5>League of Legends</h5>
+          <a class="button-27" href="Install League of Legends na.exe" download>Download</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="MK.png" class="img2" alt="Game 2">
+        <div class="carousel-caption">
+          <h5>Mortal Kombat 1</h5>
+          <a class="button-27" href="https://store.steampowered.com/app/1971870/Mortal_Kombat_1/">By now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <iframe src="https://store.steampowered.com/widget/1422450/?t=Deadlock%20is%20an%20upcoming%20multiplayer%20third-person%20shooter%20video%20game%20developed%20and%20published%20by%20Valve.%20It%20combines%20elements%20of%20the%20hero%20shooter%20and%20MOBA%20genres%20and%20is%20played%20from%20a%20third-person%20perspective." frameborder="0" width="646" height="190"></iframe>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+
+
+<div id="welcomeModal" class="modal" style="display: none; color: black;">
+  <div class="modal-content p-3">
+    <span id="closeModal" class="btn-close float-end"></span>
+    <h4 id="Text1" style="display: flex; justify-content: center;">Welcome to the Gaming Hobby Website!</h4>
+    <p id="Text2" style="display: flex; justify-content: center;">Discover, download and explore games, </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>© 2024 Gaming Hobby | Yussupov Zhangir.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="JS.js"></script>
+</body>
+</html>
